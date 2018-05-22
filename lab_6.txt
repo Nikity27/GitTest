@@ -1,0 +1,32 @@
+﻿<html>
+<body>
+<script type='text/javascript'>
+	var a = prompt('Введите количество блоковыыы', 5);
+	var b = 1;
+	var row = 2*a-1;
+	var a1 = a;
+	var a2 = a;
+	for (var block = 1; block<=a; block++ ) {
+
+
+		for (var i = 1; i<=b; i++) {
+				for (var j = 1; j<=row; j++) {
+					if (j>=a1 & j<=a2) {
+						document.write("<span style='color:green'>  *</span>")
+					} else {
+						document.write("<span style='color:white'> _</span>")
+					}
+				}
+		a1=a1*1-1;
+		a2=a2*1+1;
+		document.write('<br>');
+		}
+
+	b=b+1;
+	a1=a;
+	a2=a;
+
+	}
+</script>
+</body>
+</html>
